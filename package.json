@@ -1,0 +1,15 @@
+{
+  "name": "ekok-web-project",
+  "version": "1.0.0",
+  "description": "An experimental frontend framework",
+  "private": "true",
+  "workspaces": [
+    "packages/runtime"
+  ],
+  "scripts": {
+    "serve:examples": "npx http-serve . -o ./examples/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

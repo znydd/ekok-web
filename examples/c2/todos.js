@@ -32,6 +32,7 @@ addTodoButton.addEventListener('click', () => {
 // Render in Read Mode
 function renderTodoInReadMode(todo){
 const li = document.createElement('li');
+
 const span = document.createElement('span');
 span.textContent = todo;
 span.addEventListener('dblclick', () => {

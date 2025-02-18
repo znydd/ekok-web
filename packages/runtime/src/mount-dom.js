@@ -1,5 +1,6 @@
 import { DOM_TYPES } from './h';
-
+import { setAttributes } from './attributes';
+import { addEventListeners } from './events';
 
 export function mountDOM(vdom, parentEl){
     switch (vdom.type){
@@ -54,7 +55,7 @@ function createElementNode(vdom, parentEl){
 function addProps(el, props, vdom){
     const { on: events, ...attrs } = props;
 
-        vdom.listeners = addEventListaeners(events, el);
+        vdom.listeners = addEventListeners(events, el);
         setAttributes(el, attrs);
 
 };

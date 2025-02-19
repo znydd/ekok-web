@@ -13,3 +13,9 @@ export function addEventListeners(listeners = {}, el){
 
    return addedListeners;
 };
+
+export function removeEvenListeners(listener = {}, el){
+    Object.entriesI(listeners).forEach(([eventName, handler]) => {
+        el.removeEvenListeners(eventName, handler);
+    });
+};
